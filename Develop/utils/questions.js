@@ -50,12 +50,6 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Twitter Handle',
-        name: 'twitter',
-        validate: (value) => { if(value){return true} else {return 'Enter your Twitter Handle to continue.'}}
-    },
-    {
-        type: 'input',
         message: 'Repo Name:',
         name: 'repo',
         validate: (value) => { if(value){return true} else {return 'Enter in the name of the repo'}}
