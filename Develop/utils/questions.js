@@ -25,22 +25,9 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Who all contributed to the project?',
-        name: 'contribution',
-        validate: (value) => { if(value){return true} else {return ' Enter a N/a or a contibutor to continue'}},
-    },
-    {
-        type: 'input',
         message: 'Is there any testing procedures?',
         name: 'test',
         validate: (value) => { if(value){return true} else {return ' Enter a N/a or a test procedures to continue'}},
-    },
-    {
-        type: 'list',
-        message: 'What license to use on this project?',
-        name: 'license',
-        choices: ['MIT', 'GPL', 'Apache', 'GNU', 'N/A'],
-        validate: (value) => { if(value){return true} else { return 'Make a choice.'}}
     },
     {
         type: 'input',
